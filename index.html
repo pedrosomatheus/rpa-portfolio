@@ -288,15 +288,20 @@
           </div>
         </div>
 
-        <form class="contact-form">
-          <h3>Fale sobre seu projeto</h3>
-          <div class="form-grid">
-            <input type="text" placeholder="Nome da empresa ou responsável" />
-            <input type="email" placeholder="Seu melhor e-mail" />
-            <textarea placeholder="Descreva o processo, desafio ou sistema que você quer evoluir"></textarea>
-            <button type="submit" class="btn btn-primary">Solicitar contato</button>
-          </div>
-        </form>
+      <form class="contact-form" action="https://formsubmit.co/matheuspedroso5931@gmail.com" method="POST">
+        <h3>Fale sobre seu projeto</h3>
+
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_subject" value="Novo contato pelo portfólio">
+        <input type="hidden" name="_next" value="https://pedrosomatheus.github.io/rpa-portfolio/obrigado.html">
+
+        <div class="form-grid">
+          <input type="text" name="nome" placeholder="Nome da empresa ou responsável" required />
+          <input type="email" name="email" placeholder="Seu melhor e-mail" required />
+          <textarea name="mensagem" placeholder="Descreva o processo, desafio ou sistema que você quer evoluir" required></textarea>
+          <button type="submit" class="btn btn-primary">Solicitar contato</button>
+        </div>
+      </form>
       </div>
     </section>
 
